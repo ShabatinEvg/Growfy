@@ -2,6 +2,7 @@
 
 /*------------------------------------------------------------------*/
 body {
+    background-color: #0D0D11;
     font-family: "Poppins";
     font-weight: 300;
     color: #9C9C9C;
@@ -27,7 +28,122 @@ body {
 }
 
 /*------------------------------------------------------------------*/
+.button {
+    display: inline-block;
+    text-align: center;
+    padding: 16px 30px;
+    height: 52px;
+    background-color: #3D96F4;
+    border-radius: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease 0s;
+    line-height: 1.57;
+    /* 22/14 */
+}
 
+@media (max-width: 991.98px) {
+    .button {
+        padding: 14px 20px;
+    }
+}
+
+.button:hover {
+    background-color: #68a9f0;
+}
+
+
+/*------------------------------------------------------------------*/
+.header {}
+
+.header__container {
+    display: flex;
+    column-gap: 35px;
+    align-items: center;
+    min-height: 116px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header__logo {}
+
+.header__menu {
+    flex: 1 1 auto;
+}
+
+.menu {}
+
+.menu__icon {}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 3px;
+    justify-content: end;
+}
+
+.menu__item {}
+
+.menu__link {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.62;
+    /* 26/16 */
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.header__cart {}
+
+.cart-header {
+    color: #fff;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.cart-header:hover .cart-header__text {
+    text-decoration: underline;
+}
+
+.cart-header__text {
+    font-size: 18px;
+    line-height: 1.55;
+    /* 28/18 */
+}
+
+.cart-header__quantity {
+    background: rgba(129, 129, 139, 0.3);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header__buuton {
+    flex: 0 0 auto;
+}
+
+.icon-menu {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+
+    .header__container,
+    .menu__list {
+        column-gap: 25px;
+    }
+}
 
 /*------------------------------------------------------------------*/
 
