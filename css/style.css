@@ -1,18 +1,30 @@
 @import url("reset.css");
+
 /*------------------------------------------------------------------*/
+body {
+    font-family: "Poppins";
+    font-weight: 300;
+    color: #9C9C9C;
+}
 
 .wrapper {
     min-height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    overflow: clip;
 }
 
 /*------------------------------------------------------------------*/
-
+[class*="__container"] {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
 
 /*------------------------------------------------------------------*/
-
+.page {
+    flex: 1 1 auto;
+}
 
 /*------------------------------------------------------------------*/
 
