@@ -50,6 +50,14 @@ body {
     }
 }
 
+@media (max-width: 767.98px) {
+    .button {
+        padding: 10px 15px;
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+}
+
 .button:hover {
     background-color: #68a9f0;
 }
@@ -77,6 +85,8 @@ body {
 
 .menu__icon {}
 
+.menu__body {}
+
 .menu__list {
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +98,7 @@ body {
 .menu__item {}
 
 .menu__link {
+    display: block;
     font-size: 16px;
     color: #fff;
     line-height: 1.62;
@@ -137,13 +148,97 @@ body {
     display: none;
 }
 
+.header__logo,
+.header__cart,
+.header__buuton {
+    position: relative;
+    z-index: 5;
+}
+
 @media (max-width: 991.98px) {
 
     .header__container,
     .menu__list {
         column-gap: 25px;
     }
+
+    .header__container {
+        min-height: 90px;
+    }
 }
+
+@media (max-width: 767.98px) {
+
+    .header__container,
+    .menu__list {
+        column-gap: 15px;
+    }
+
+    .icon-menu {
+        display: block;
+        position: relative;
+        flex: 0 0 30px;
+        height: 18px;
+        z-index: 5;
+    }
+
+    .icon-menu span,
+    .icon-menu::before,
+    .icon-menu::after {
+        content: "";
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .icon-menu::before {
+        top: 0;
+    }
+
+    .icon-menu::after {
+        bottom: 0;
+    }
+
+    .icon-menu span {
+        top: calc(50% - 1px);
+    }
+
+    .menu__body {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        left: 0;
+        top: 0;
+        padding: 100px 15px 30px 15px;
+    }
+
+    .menu__list {
+        row-gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu__link {
+        font-size: 32px;
+    }
+
+    .header__container {
+        min-height: 70px;
+    }
+}
+
+@media (max-width: 560px) {
+    .header__logo {
+        width: 48px;
+        flex: 0 0 48px;
+        overflow: hidden;
+    }
+}
+
 
 /*------------------------------------------------------------------*/
 
