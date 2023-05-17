@@ -50,14 +50,6 @@ body {
     }
 }
 
-@media (max-width: 767.98px) {
-    .button {
-        padding: 10px 15px;
-        letter-spacing: 1px;
-        font-size: 13px;
-    }
-}
-
 .button:hover {
     background-color: #68a9f0;
 }
@@ -215,6 +207,8 @@ body {
         padding: 100px 15px 30px 15px;
     }
 
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
     .menu__list {
         row-gap: 10px;
         flex-direction: column;
@@ -236,6 +230,18 @@ body {
         width: 48px;
         flex: 0 0 48px;
         overflow: hidden;
+    }
+
+    .cart-header__text {
+        display: none;
+    }
+
+    .cart-header__quantity {
+        width: 30px;
+        height: 45px;
+        border-radius: 0;
+        font-weight: 500;
+        background: url("/img/cart/shopping-cart.svg") center / 30px no-repeat;
     }
 }
 
