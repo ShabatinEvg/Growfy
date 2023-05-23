@@ -29,6 +29,8 @@ body {
 
 .page__main {}
 
+.page__clients {}
+
 /*------------------------------------------------------------------*/
 .button {
     display: inline-block;
@@ -498,6 +500,33 @@ body {
 
 /*------------------------------------------------------------------*/
 
+.clients {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.clients__container {}
+
+.clients__title {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1.57;
+    margin-bottom: 44px;
+}
+
+.clients__items {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.clients__item img {
+    max-width: 100%;
+}
 
 /*------------------------------------------------------------------*/
 
